@@ -7,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+//?  The CORS Policy was giving me some difficulties,  i just find the way to turn it off.
+//? This might not be the correct approach, but was what i could manage to understand in this period of time.
 builder.Services.AddCors(
     options =>
     {
